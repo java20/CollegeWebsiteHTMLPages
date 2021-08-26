@@ -1,0 +1,35 @@
+/** If you want to use 3 cards in one row use custom3profilecard and custom3profilecardbody */
+.custom3ProfileCard {
+	width: 75%;
+	background-image: url("./../img/civil_bg_img.jpeg");
+}
+
+.custom3ProfileCardBody {
+	width: 75%;
+	background-color: #ffcc00;
+	padding: 2% 2%;
+}
+
+/** If you want to use 2 cards in one row use custom2profilecard and custom2profilecardbody */
+.custom2ProfileCard {
+	width: 50%;
+	background-image: url("./../img/civil_bg_img.jpeg");
+}
+
+.custom2ProfileCardBody {
+	width: 50%;
+	background-color: #ffcc00;
+	padding: 2% 2%;
+}
+
+/** If you want to use 1 cards in one row use custom1profilecard and custom1profilecardbody */
+.custom1ProfileCard {
+	width: 25%;
+	background-image: url("./../img/civil_bg_img.jpeg");
+}
+
+.custom1ProfileCardBody {
+	width: 25%;
+	background-color: #ffcc00;
+	padding: 2% 2%;
+}

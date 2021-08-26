@@ -1,0 +1,33 @@
+.tae_navbar {
+	background-color: var(--color-secondary);
+	font-size: 1em;
+
+	.navbar-nav {
+		font-size: 1em;
+		.nav-link {
+			color: var(--color-primary);
+		}
+
+		.nav-link:hover {
+			color: darken($color-primary, 15%);
+		}
+
+		.dropdown {
+			font-size: 1em;
+			&-menu {
+				font-size: 1em;
+				background-color: var(--color-secondary);
+			}
+
+			&-item {
+				font-size: 1em;
+				color: var(--color-primary);
+			}
+
+			&-item:hover {
+				color: var(--color-grey-light3);
+				background-color: var(--color-primary);
+			}
+		}
+	}
+}

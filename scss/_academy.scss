@@ -1,0 +1,62 @@
+/*Body Style*/
+
+/* #maincontainer{
+    background-color: rgba(211, 211, 211, 0.986);
+} */
+
+/*Table Style*/
+tr:nth-child(even),
+thead tr:first-child {
+	background-color: #003a6a;
+	text-align: center;
+	color: white;
+	font-weight: bolder;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+tr:nth-child(odd) {
+	background-color: #ffcc00;
+	text-align: center;
+	color: #003a6a;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+tbody tr:nth-child(even):hover {
+	background-color: rgba(0, 59, 107, 0.8);
+}
+
+tbody tr:nth-child(odd):hover {
+	background-color: rgba(255, 204, 0, 0.8);
+}
+
+/*Navigation style*/
+
+nav {
+	// background-color: #ffcc00;
+}
+
+/*BreadCrumb Style having custom class maincontent*/
+
+.maincontent {
+	margin: 4% 5%;
+	@media only screen and (max-width: $bp-mobile) {
+		margin: 5% 0;
+	}
+}
+
+/*Main Content Style having custom class maincontent*/
+div.maincontent {
+	padding: 2rem;
+	@media only screen and (max-width: $bp-mobile) {
+		padding: 0.8rem;
+	}
+}
+
+.tae_breadcrumb {
+	margin: 4% 5%;
+	@media only screen and (max-width: $bp-mobile) {
+		margin: 4% 0;
+	}
+}

@@ -1,0 +1,42 @@
+.tae_header {
+	padding: 1.5rem;
+	background-color: var(--color-primary);
+	color: var(--color-grey-light3);
+	text-align: center;
+	// display: flex;
+	// justify-content: space-between;
+	// align-content: center;
+
+	display: grid;
+	grid-template-columns: 1fr 70% 1fr;
+	justify-items: center;
+	align-items: center;
+
+	@media only screen and (max-width: $bp-mobile) {
+		grid-template-columns: 1fr;
+	}
+
+	&__heading {
+		& > * {
+			filter: var(--drop-shadow);
+			line-height: 2;
+		}
+	}
+
+	&__logo {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		@media only screen and (max-width: $bp-mobile) {
+			width: 25% !important;
+		}
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: var(--color-grey-light3);
+	}
+}

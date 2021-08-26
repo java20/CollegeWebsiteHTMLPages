@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+	--primary: #003a6a;
+	--color-primary: #003a6a;
+	--color-secondary: #ffcc00;
+	--color-grey-light1: #d6d6d6;
+	--color-grey-light2: #e4e4e4;
+	--color-grey-light3: #fcfcfc;
+
+	--color-grey-dark1: #828282;
+	--color-grey-dark2: #5f5f5f;
+	--color-grey-dark3: #525252;
+
+	--drop-shadow: drop-shadow(0px 5px 1px #000);
+	--box-shadow: 0 0 0 0.2rem rgba(var(--color-primary), 0.7);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Noto Sans JP", sans-serif;
+	color: var(--color-grey-dark3);
+	background-color: var(--color-grey-light2);
+	word-spacing: 2px;
+	line-height: 1.5;
+	overflow-x: hidden;
+
+	@media only screen and (max-width: $bp-mobile) {
+		font-size: 72.5%;
+		word-spacing: 1px;
+		line-height: 2;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--color-primary);
+}
+
+a {
+	// color: darker($color-primary, 5%);
+}
+
+::-moz-selection {
+	/* Code for Firefox */
+	color: var(--color-primary);
+	background: var(--color-secondary);
+}
+
+::selection {
+	color: var(--color-primary);
+	background: var(--color-secondary);
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $color-secondary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: darken($color-secondary, 5%);
+}

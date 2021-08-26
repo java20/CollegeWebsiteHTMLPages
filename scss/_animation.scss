@@ -1,0 +1,132 @@
+@keyframes heartbeatAnimation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.heartbeat {
+	backface-visibility: hidden;
+	animation: heartbeatAnimation 1s 2 ease;
+
+	&:parent {
+		backface-visibility: hidden;
+	}
+
+	&-hover:hover {
+		backface-visibility: hidden;
+		animation: heartbeatAnimation 1s 2 ease;
+
+		&:parent {
+			backface-visibility: hidden;
+		}
+	}
+}
+
+@keyframes slideLeftAnimation {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(100%);
+	}
+}
+
+.slideLeft {
+	backface-visibility: hidden;
+	transform: translateX(0);
+	animation: slideLeftAnimation 0.7s 1 ease;
+	transform: translateX(100%);
+}
+
+@keyframes slideRightAnimation {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.slideRight {
+	backface-visibility: hidden;
+	transform: translateX(0);
+	animation: slideRightAnimation 0.7s 1 ease;
+	transform: translateX(-100%);
+}
+
+@keyframes slideOutAnimation {
+	from {
+		width: 100%;
+	}
+	to {
+		width: 0%;
+	}
+}
+
+.slideOut {
+	backface-visibility: hidden;
+	width: 100%;
+	animation: slideOutAnimation 0.5s 1 ease-out;
+	width: 0%;
+}
+
+@keyframes slideInAnimation {
+	from {
+		width: 0%;
+		transform-origin: center;
+	}
+	to {
+		width: 100%;
+		transform-origin: center;
+	}
+}
+
+.slideIn {
+	backface-visibility: hidden;
+	width: 0%;
+	animation: slideInAnimation 0.5s 1;
+	width: 100%;
+}
+
+@keyframes blurInAnimation {
+	from {
+		opacity: 0;
+		transform-origin: center;
+	}
+	to {
+		opacity: 1;
+		transform-origin: center;
+	}
+}
+
+.blurIn {
+	backface-visibility: hidden;
+	width: 100%;
+	opacity: 0;
+	animation: blurInAnimation 0.5s 1;
+	opacity: 1;
+}
+
+@keyframes blurOutAnimation {
+	from {
+		opacity: 1;
+		transform-origin: center;
+	}
+	to {
+		opacity: 0;
+		transform-origin: center;
+	}
+}
+
+.blurOut {
+	backface-visibility: hidden;
+	opacity: 1;
+	animation: blurOutAnimation 0.8s 1;
+	opacity: 0;
+}
